@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Break Timer & Participant Selector</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="root">
+    <div class="container">
+      <h1>Break Timer</h1>
+      <div class="timer-info">
+        <div>Duration: <span id="duration">00:00</span></div>
+        <div>Time left: <span id="time-left">00:00</span></div>
+      </div>
+      <div class="timer-buttons">
+        <button data-minutes="5">5 min</button>
+        <button data-minutes="10">10 min</button>
+        <button data-minutes="15">15 min</button>
+        <button data-minutes="45">45 min</button>
+        <button data-minutes="60">1 hour</button>
+        <button id="start-timer">Start Timer</button>
+      </div>
+      <h2>Participant Selector</h2>
+      <div class="participant-selector">
+        <input id="participants" value="Jan, Hein, Pit" />
+        <button id="select-next">Select next participant</button>
+      </div>
+      <div id="selected-participant">Claas</div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
